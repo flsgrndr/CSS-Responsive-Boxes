@@ -3,7 +3,7 @@ body {
 }
 
 * {
-  border: 1px solid blue;
+  border: 1px solid blueviolet;
 }
 
 .container {
@@ -13,30 +13,24 @@ body {
   justify-content: space-between;
 }
 
-.a {
-  padding: .5em;
+header, footer  {
   flex-grow: 1;
 }
 
-.b {
-  padding: .5em;
-  flex-grow: 3;
+main {
+  flex-grow:3;
 }
 
-.c {
-  padding: .5em;
-  flex-grow: 1;
-}
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .a {
+  header {
     width: 100%;
   }
-  .a, .b, .c {
-    margin: .5em;
+  main, footer, header {
+    margin: 1em;
   }
 }
